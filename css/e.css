@@ -1,76 +1,76 @@
-.wrapper {
+/*************** 总容器 ************************/
+.wrapper{
     width: 100%;
     height: 100%;
 }
 
-.wrapper header {
+/*************** header ************************/
+
+.wrapper header{
     width: 100%;
+    /*相对于视口的宽度或者高度， 视口被均分为100个单位的vw*/
     height: 12vw;
     background-color: #009AFF;
     display: flex;
+    /*设置侧轴元素的排列方式(单行)*/
     align-items: center;
 }
-
-.wrapper header .icon-location-box {
+.wrapper header .icon-location-box{
     width: 3.5vw;
     height: 3.5vw;
     margin: 0 1vw 0 3vw;
-}
 
-.wrapper header .location-text {
-    color: white;
+}
+.wrapper header .loacation-text{
+    color:#fff;
     font-size: 4.5vw;
     font-weight: 700;
 }
-
-.wrapper header .fa-caret-down {
+.wrapper header .loacation-text .fa-caret-down{
     margin-left: 1vw;
 }
-
-.wrapper .search {
+/*************** search ************************/
+.wrapper .search{
     width: 100%;
     height: 13vw;
+
 }
-
-.wrapper .search .search-fixed-top {
+.wrapper .search .search-fixed-top{
     width: 100%;
     height: 13vw;
-    background-color: #009AFF;
     display: flex;
+    background-color: #009AFF;
     justify-content: center;
     align-items: center;
 }
-
-.wrapper .search .search-fixed-top .search-box {
+.wrapper .search .search-fixed-top .search-box{
     width: 90%;
     height: 9vw;
-    background-color: white;
-    border-radius: 20px;
+    background-color: #fff;
+    border-radius: 2px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: '宋体';
+    align-items: center;
     font-size: 3.5vw;
-    color: #AEAEAE;
-    letter-spacing: 5px;
+    color:#AEAEAE ;
+    font-family: "宋体";
     user-select: none;
 }
-
-.wrapper .search .search-fixed-top .search-box .fa-search {
+.wrapper .search .search-fixed-top .search-box .fa-search{
     margin-right: 1vw;
 }
-
-.wrapper .foodtype {
+/*************** 商品分类部分 ************************/
+.wrapper .foodtype{
     width: 100%;
     height: 48vw;
     display: flex;
+    /*换行*/
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
 }
-
-.wrapper li {
-    width: 18%;
+.wrapper .foodtype li{
+    width: 18vw;
     height: 20vw;
     display: flex;
     flex-direction: column;
@@ -86,5 +86,4 @@
 .wrapper .foodtype li p{
     font-size: 3.2vw;
     color: #666;
-
 }
