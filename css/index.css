@@ -52,5 +52,9 @@
     font-family: '宋体';
     font-size: 3.5vw;
     color: #AEAEAE;
+    letter-spacing: 5px;
     user-select: none;
+}
+.wrapper .search .search-fixed-top .search-box .fa-search{
+    margin-right: 1vw;
 }
