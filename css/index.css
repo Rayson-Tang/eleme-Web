@@ -69,7 +69,7 @@
     align-content: center;
 }
 
-.wrapper li {
+.wrapper .foodtype li {
     width: 18%;
     height: 20vw;
     display: flex;
@@ -117,68 +117,67 @@
     font-width: 700;
     color: #C79060;
 }
+/*************** 横幅广告 ************************/
 
-.wrapper .supermember {
+.wrapper .supermember{
     width: 95%;
-    height: 12vw;
-    margin: 2vw auto;
-    box-sizing: border-box;
+    height: 11.5vw;
+    margin: 0 auto;
     background-color: #FEEDC1;
+    margin-top: 1.3vw;
+    border-radius: 2px;
+    color: #644F1B;
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    color: #644F1B;
+    align-items: center;
 }
-
-.wrapper .supermember .left {
+.wrapper .supermember .left{
     display: flex;
     align-items: center;
     margin-left: 4vw;
+    user-select: none;
 }
-
-.wrapper .supermember .left img {
+.wrapper .supermember .left img{
     width: 6vw;
     height: 6vw;
     margin-right: 2vw;
 }
-
-.wrapper .supermember .left h3 {
+.wrapper .supermember .left h3{
     font-size: 4vw;
     margin-right: 2vw;
 }
 
-.wrapper .supermember .left p {
+.wrapper .supermember .left p{
     font-size: 3vw;
+
 }
-
-.wrapper .supermember .right {
-
-    display: flex;
-    align-items: center;
+.wrapper .supermember .right{
+    font-size: 3vw;
     margin-right: 4vw;
-    font-size: 3vw;
+    cursor: pointer;
 }
 
-.wrapper .recommend {
+/*************** 推荐商家部分 ************************/
+
+.wrapper .recommend{
     width: 100%;
     height: 14vw;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-
-.wrapper .recommend p {
-    margin: 0 4vw;
-    font-size: 4vw;
-}
-
 .wrapper .recommend .recommend-line {
-    width: 8vw;
+    width: 6vw;
     height: 0.2vw;
-    background-color: black;
+    background-color: #888;
 }
+.wrapper .recommend p{
+    font-size: 4vw;
+    margin: 0 4vw;
+}
+/*************** 推荐商家表头 ************************/
 
-.wrapper .recommendtype {
+.wrapper .recommendtype{
     width: 100%;
     height: 5vw;
     display: flex;
@@ -187,49 +186,46 @@
     margin-bottom: 5vw;
 }
 
-.wrapper .recommendtype li {
+.wrapper .recommendtype li{
     font-size: 3.5vw;
-    color: #555555;
+    color: #555;
 }
-
-.wrapper .business {
+/*************** 推荐商家列表部分 ************************/
+.wrapper .business{
     width: 100%;
     margin-bottom: 14vw;
 }
-
-.wrapper .business li {
+.wrapper .business li{
     width: 100%;
-    display: flex;
-    user-select: none;
-    padding: 2.5vw;
-    border-bottom: 1px solid #DDD;
     box-sizing: border-box;
+    padding: 2.5vw;
+    user-select: none;
+    border-bottom: solid 1px #DDD;
+    display: flex;
 }
 
-.wrapper .business li img {
+.wrapper .business li img{
     width: 18vw;
     height: 18vw;
 }
-
-.wrapper .business li .business-info {
+.wrapper .business li .business-info{
     width: 100%;
-    padding-left: 3vw;
     box-sizing: border-box;
+    padding-left: 3vw;
 }
 
-.wrapper .business li .business-info .business-info-h {
+.wrapper .business li .business-info .business-info-h{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2vw;
 }
 
-.wrapper .business li .business-info .business-info-h h3 {
+.wrapper .business li .business-info .business-info-h h3{
     font-size: 4vw;
     color: #333;
 }
-
-.wrapper .business li .business-info .business-info-h .business-info-like {
+.wrapper .business li .business-info .business-info-h .business-info-like{
     width: 1.6vw;
     height: 3.4vw;
     background-color: #666;
@@ -237,9 +233,10 @@
     font-size: 4vw;
     margin-left: 4vw;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
+
 
 .wrapper .business li .business-info .business-info-star{
     display: flex;
@@ -248,6 +245,7 @@
     margin-bottom: 2vw;
     font-size: 3.1vw;
 }
+
 
 .wrapper .business li .business-info .business-info-star .business-info-star-left{
     display: flex;
@@ -258,42 +256,74 @@
     color: #FEC80E;
     margin-right: 0.5vw;
 }
-
 .wrapper .business li .business-info .business-info-star .business-info-star-left p{
     color: #666;
     margin-left: 1vw;
 }
-
 .wrapper .business li .business-info .business-info-star .business-info-star-right{
     background-color: #0097FF;
-    color: #ffffff;
+    color: #fff;
     font-size: 2.4vw;
-    padding: 0 0.6vw;
     border-radius: 2px;
+    padding: 0 0.6vw;
 }
-
-.wrapper .business li .business-info .business-info-delivery{
+.wrapper .business li .business-info  .business-info-delivery{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2vw;
-    color: #666666;
+
+    color: #666;
     font-size: 3.1vw;
 }
 
-.wrapper .business li .business-info .business-info-explain {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3vw;
-}
-
-.wrapper .business li .business-info .business-info-explain div{
-    border: 1px solid #DDDDDD;
+.wrapper .business li .business-info  .business-info-explain div{
+    border: solid 1px #DDD;
     font-size: 2.8vw;
-    color: #666666;
+    color: #666;
     border-radius: 3px;
     padding: 0 0.1vw;
 }
+
+.wrapper .business li .business-info .business-info-promotion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8vw;
+}
+
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-left{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-left .business-info-promotion-left-incon{
+    width: 4vw;
+    height: 4vw;
+    background-color: greenyellow;
+    font-size: 3vw;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-left p{
+    color: #666666;
+    font-size: 3vw;
+    margin-left: 2vw;
+}
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-right {
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    color: #999999;
+}
+.wrapper .business li .business-info  .business-info-promotion .business-info-promotion-right p{
+    margin-right: 2vw;
+}
+
+
 
 
 
