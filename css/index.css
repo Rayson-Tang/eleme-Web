@@ -79,12 +79,94 @@
     user-select: none;
     cursor: pointer;
 }
-.wrapper .foodtype li img{
+
+.wrapper .foodtype li img {
     width: 12vw;
     height: 10.3vw;
 }
-.wrapper .foodtype li p{
+
+.wrapper .foodtype li p {
     font-size: 3.2vw;
     color: #666;
-
 }
+
+.wrapper .banner {
+    width: 95%;
+    height: 29vw;
+    margin: 0 auto;
+    background-image: url('../img/index_banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2vw 6vw;
+    box-sizing: border-box;
+}
+
+.wrapper .banner h3 {
+    font-size: 4.2vw;
+    margin-bottom: 1.2vw;
+}
+
+.wrapper .banner p {
+    font-size: 3.4vw;
+    margin-bottom: 2.4vw;
+    color: #666;
+}
+
+.wrapper .banner a {
+    font-size: 3vw;
+    font-width: 700;
+    color: #C79060;
+}
+
+.wrapper .supermember {
+    width: 95%;
+    height: 12vw;
+    margin: 2vw auto;
+    box-sizing: border-box;
+    background-color: #FEEDC1;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: #644F1B;
+}
+
+.wrapper .supermember .left {
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+}
+
+.wrapper .supermember .left img {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 2vw;
+}
+
+.wrapper .supermember .left h3 {
+   font-size: 4vw;
+    margin-right: 2vw;
+}
+
+.wrapper .supermember .left p {
+    font-size: 3vw;
+}
+
+.wrapper .supermember .right {
+
+    display: flex;
+   align-items: center;
+    margin-right: 4vw;
+    font-size: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
